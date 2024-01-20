@@ -17,7 +17,9 @@ app.use(cors({ credentials: true, origin: true }));
  * @description routes 
  * */
 const authentication = require('./src/routes/authentication');
+const artist = require('./src/routes/artist');
 app.use('/authentication', authentication);
+app.use('/artist', artist);
 
 /** 
  * @description app welcome 
